@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Venix.ODE.app.Pages.Tools.NovoRap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="820" Height="510">
+
+    <Grid Margin="0,0,0,14">
+        <ScrollViewer Margin="0,0,0,-22">
+            <StackPanel x:Name="Panel" MinWidth="150" Height="512">
+
+                <TextBlock Text="NOVO RAP" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Cadastrando um novo arquivo rap no banco de dados" />
+        <ScrollViewer Margin="0,0,0,-25"  Width="820" Grid.RowSpan="2"/>
+        <Grid HorizontalAlignment="Left" Height="428" Margin="10,58,0,0" VerticalAlignment="Top" Width="800">
+            <Label Content="ID (BLES/BLUS/etc):" HorizontalAlignment="Left" Margin="72,56,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="tbID" HorizontalAlignment="Left" Height="23" Margin="198,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+            <TextBox Name="tbNome" TextWrapping="Wrap" Text="" Margin="198,77,230,328"/>
+            <TextBox Name="tbRapNome" TextWrapping="Wrap" Text="" Margin="198,105,230,300"/>
+            <TextBox Name="tbRapCode" TextWrapping="Wrap" Text="" Margin="198,133,230,272"/>
+            <Label Content="NOME DO JOGO:" HorizontalAlignment="Left" Margin="72,84,0,0" VerticalAlignment="Top"/>
+            <Label Content="RAP NOME:" HorizontalAlignment="Left" Margin="72,112,0,0" VerticalAlignment="Top"/>
+            <Label Content="RAP CODIGO (HEX):" HorizontalAlignment="Left" Margin="72,140,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="tbAdd" Content="Adicionar" Margin="425,178,230,224" Click="tbAdd_Click"/>
+        </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

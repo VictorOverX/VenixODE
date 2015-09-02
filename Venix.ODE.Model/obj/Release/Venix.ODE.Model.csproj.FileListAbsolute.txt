@@ -1,0 +1,5 @@
+C:\Users\Victor\documents\visual studio 2013\Projects\Venix.ODE.app\Venix.ODE.Model\obj\Release\Venix.ODE.Model.csprojResolveAssemblyReference.cache
+C:\Users\Victor\documents\visual studio 2013\Projects\Venix.ODE.app\Venix.ODE.Model\bin\Release\Venix.GFW.Model.dll
+C:\Users\Victor\documents\visual studio 2013\Projects\Venix.ODE.app\Venix.ODE.Model\bin\Release\Venix.GFW.Model.pdb
+C:\Users\Victor\documents\visual studio 2013\Projects\Venix.ODE.app\Venix.ODE.Model\obj\Release\Venix.GFW.Model.dll
+C:\Users\Victor\documents\visual studio 2013\Projects\Venix.ODE.app\Venix.ODE.Model\obj\Release\Venix.GFW.Model.pdb

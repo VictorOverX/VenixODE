@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Venix.ODE.app.Pages.Download.PS3.edtJogo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="820" Height="510">
+
+    <Grid Margin="0,0,0,14">
+        <ScrollViewer Margin="0,0,0,-22">
+            <StackPanel x:Name="Panel" MinWidth="150" Height="512">
+
+                <TextBlock Text="EDITANDO JOGO" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Você pode editar ou apagar seu jogo por aqui, basta utilizar o ID do jogo " />
+
+                <Grid Margin="0,82,0,21">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="146*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="ID (BLES/BLUS/etc):" HorizontalAlignment="Left" Margin="10,-49,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="23" Margin="127,-56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="115" Grid.ColumnSpan="2"/>
+                    <Label Content="Titulo:" HorizontalAlignment="Left" Margin="10,-21,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbTitulo" HorizontalAlignment="Left" Height="23" Margin="127,-28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <Label Content="Tipo:" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.907,0.758"/>
+                    <Label Content="Região:" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+                    <Label Content="PSN URL(1):" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLink1" HorizontalAlignment="Left" Height="23" Margin="127,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <ComboBox x:Name="tbRegiao" HorizontalAlignment="Left" Margin="127,28,0,0" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsEnabled="False">
+                        <ComboBoxItem Content="EU"/>
+                        <ComboBoxItem Content="US"/>
+                        <ComboBoxItem Content="JP"/>
+                        <ComboBoxItem Content="AS"/>
+                        <ComboBoxItem Content="HK"/>
+                        <ComboBoxItem/>
+
+                    </ComboBox>
+                    <Label Content="Capa:" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbImagem" HorizontalAlignment="Left" Height="23" Margin="127,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <ComboBox x:Name="tbTipo" HorizontalAlignment="Left" Margin="127,1,0,0" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsEnabled="False">
+                        <ComboBoxItem Content="PSP"/>
+                        <ComboBoxItem Content="PSONE"/>
+                        <ComboBoxItem Content="PSVITA"/>
+                        <ComboBoxItem Content="PS2"/>
+                        <ComboBoxItem Content="PS3"/>
+                        <ComboBoxItem Content="PSN"/>
+                        <ComboBoxItem Content="DLC"/>
+                        <ComboBoxItem/>
+                    </ComboBox>
+                    <Button x:Name="btnEnviar" Content="Salvar" HorizontalAlignment="Left" Margin="130,275,0,0" VerticalAlignment="Top" Width="134" Click="btnEnviar_Click" Grid.Column="1" IsEnabled="False" />
+                    <Label Content="PSN URL(2):" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLink2" HorizontalAlignment="Left" Height="23" Margin="127,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <Label Content="PSN URL(3):" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLink3" HorizontalAlignment="Left" Height="23" Margin="127,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <Label Content="PSN URL(4):" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLink4" HorizontalAlignment="Left" Height="23" Margin="127,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <Button x:Name="btnAbrir" Content="Abrir" HorizontalAlignment="Left" Margin="189,222,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" Click="btnAbrir_Click" Grid.Column="1" IsEnabled="False" />
+                    <Label Content="PSN URL(5):" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbLink5" HorizontalAlignment="Left" Height="23" Margin="127,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                    <Button x:Name="btnCancelar" Content="Cancelar" Margin="33,275,459,117" Click="btnCancelar_Click" Grid.Column="1" IsEnabled="False"/>
+                    <Button x:Name="btnApagar" Content="Apagar" Margin="10,275,134,117" Click="btnApagar_Click" IsEnabled="False"/>
+                    <Button x:Name="btnAlterar" Content="Alterar" Margin="172,-59,320,451" Click="btnAlterar_Click" Grid.Column="1" IsEnabled="False"/>
+                    <Button x:Name="btnBusca" Content="Busca" Height="23" Margin="11,-56,501,451" Grid.Column="1" Padding="16,2,16,5" Click="btnBusca_Click"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

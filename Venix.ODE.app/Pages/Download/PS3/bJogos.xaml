@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Venix.ODE.app.Pages.Download.PS3.bJogos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="820" Height="510">
+
+    <Grid Margin="0,0,0,14">
+        <ScrollViewer Margin="0,0,0,-22">
+            <StackPanel x:Name="Panel" MinWidth="150" Height="512" Loaded="Panel_Loaded">
+
+                <TextBlock Text="DOWNLOAD DE JOGOS" Style="{StaticResource Heading2}" />
+                <TextBlock Text="Baixe seus jogos aqui" />
+                <Grid Margin="0,45,0,0" Height="393">
+                    <Label Content="Busca:" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbBusca" Height="23" Margin="61,10,482,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" TextChanged="tbBusca_TextChanged"/>
+                    <Label Content="Filtro:" HorizontalAlignment="Left" Margin="501,13,0,0" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="gridLista" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="602" Height="306" IsTextSearchEnabled="True" SelectionChanged="gridLista_SelectionChanged"/>
+                    <Button Content="Baixar Jogo" HorizontalAlignment="Left" Margin="630,357,0,10" Width="180" Click="Button_Click"/>
+                    <Rectangle Fill="#FF4D4D4D" HorizontalAlignment="Left" Height="342" Margin="630,10,0,0" Stroke="#FF424141" VerticalAlignment="Top" Width="180" RadiusX="5" RadiusY="5"/>
+                    <ComboBox x:Name="tbTipo" HorizontalAlignment="Left" Margin="546,10,0,0" VerticalAlignment="Top" Width="66" SelectionChanged="tbTipo_SelectionChanged">
+                        <ComboBoxItem Content="PSP"/>
+                        <ComboBoxItem Content="PSONE"/>
+                        <ComboBoxItem Content="PSVITA"/>
+                        <ComboBoxItem Content="PS2"/>
+                        <ComboBoxItem Content="PS3"/>
+                        <ComboBoxItem Content="PSN"/>
+                        <ComboBoxItem Content="DLC"/>
+                        <ComboBoxItem/>
+                    </ComboBox>
+                    <Image x:Name="imgCapa" HorizontalAlignment="Left" Height="160" Margin="649,31,0,0" VerticalAlignment="Top" Width="143"/>
+                    <TextBlock x:Name="tbTitulo" HorizontalAlignment="Left" Margin="649,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" Height="32" TextAlignment="Center"/>
+                    <TextBlock x:Name="tbID" HorizontalAlignment="Left" Margin="649,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" Height="20" TextAlignment="Center"/>
+                    <TextBlock x:Name="labelDownload" HorizontalAlignment="Left" Margin="649,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" Height="23"/>
+                    <TextBlock x:Name="tbTotal" HorizontalAlignment="Left" Margin="369,363,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" Height="19" FontFamily="Helvetica"/>
+                    <TextBlock x:Name="veloDonwload" HorizontalAlignment="Left" Margin="649,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" Height="23"/>
+                    <Rectangle Fill="#FF4D4D4D" HorizontalAlignment="Left" Height="26" Margin="10,357,0,0" Stroke="#FF424141" VerticalAlignment="Top" Width="345" RadiusX="5" RadiusY="5"/>
+                    <TextBlock x:Name="tbBaixando" HorizontalAlignment="Left" Margin="20,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54"/>
+                    <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="26" Margin="79,357,0,0" VerticalAlignment="Top" Width="276" IsHitTestVisible="False"/>
+                    <TextBlock x:Name="labelPerc" HorizontalAlignment="Left" Margin="187,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="57"/>
+                    <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="501,357,0,0" VerticalAlignment="Top" Width="120" Click="btnCancelar_Click"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

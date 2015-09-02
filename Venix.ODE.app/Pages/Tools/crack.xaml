@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Venix.ODE.app.Pages.Tools.crack"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="820" Height="510" Loaded="UserControl_Loaded" Unloaded="UserControl_Unloaded">
+
+    <Grid Margin="0,0,0,14">
+        <TextBlock Text="CRIANDO CRACK" Style="{StaticResource Heading2}" Margin="0,0,0,475" />
+        <TextBlock Text="Ferramenta para criação de crack para seus jogos" Margin="0,21,0,459" />
+        <Grid HorizontalAlignment="Left" Height="444" Margin="10,42,0,0" VerticalAlignment="Top" Width="800">
+            <Label Content="Act.dat (Opcional):" HorizontalAlignment="Left" Margin="48,108,0,0" VerticalAlignment="Top" Height="19"/>
+            <Label Content="ContentID:" HorizontalAlignment="Left" Margin="48,59,0,0" VerticalAlignment="Top" Height="19"/>
+            <Label Content="RIF:" HorizontalAlignment="Left" Margin="48,160,0,0" VerticalAlignment="Top" Height="19"/>
+            <Label Content="RAP:" HorizontalAlignment="Left" Margin="48,136,0,0" VerticalAlignment="Top" Height="19"/>
+
+            <TextBox x:Name="tbContentID" HorizontalAlignment="Left" Height="23" Margin="172,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261"/>
+            <TextBox x:Name="tbAct" HorizontalAlignment="Left" Height="23" Margin="172,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" IsReadOnly="True"/>
+            <TextBox x:Name="tbRap" HorizontalAlignment="Left" Height="23" Margin="172,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" IsReadOnly="True"/>
+            <TextBox x:Name="tbRif" HorizontalAlignment="Left" Height="23" Margin="172,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" IsReadOnly="True"/>
+
+            <Button x:Name="btnAbrirAct" Content="Abrir" HorizontalAlignment="Left" Margin="438,104,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" Click="btnAbrirAct_Click" IsEnabled="False"/>
+            <Button x:Name="btnAbrirRap" Content="Abrir" HorizontalAlignment="Left" Margin="438,132,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" Click="btnAbrirRap_Click" IsEnabled="False"/>
+            <Button x:Name="btnAbrirRif" Content="Abrir" HorizontalAlignment="Left" Margin="438,160,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" Click="btnAbrirRif_Click" IsEnabled="False"/>
+            <Button x:Name="btnCriar" Content="Criar Crack" HorizontalAlignment="Left" Margin="393,268,0,0" VerticalAlignment="Top" Width="121" IsEnabled="False" Click="btnCriar_Click"/>
+            <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="438,55,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" Click="btnSalvar_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="49,309,0,0" TextWrapping="Wrap" Text="Atenção essa é uma versão de teste do Crack!" VerticalAlignment="Top" Height="26" Width="465" Foreground="#FFFFF4F4" FontSize="14" TextAlignment="Center" Padding="1,2,1,1">
+                <TextBlock.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFDE3B3B" Offset="0"/>
+                        <GradientStop Color="#FFEA2828" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Background>
+            </TextBlock>
+            <TextBox x:Name="tbExdata" HorizontalAlignment="Left" Height="23" Margin="172,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Pasta do (exdata):" HorizontalAlignment="Left" Margin="48,31,0,0" VerticalAlignment="Top" Height="19"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="313,268,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="btnCancelar_Click"/>
+            <Label Content="EDAT:" HorizontalAlignment="Left" Margin="49,188,0,0" VerticalAlignment="Top" Height="19"/>
+            <TextBox x:Name="tbEdat" HorizontalAlignment="Left" Height="23" Margin="173,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" IsReadOnly="True"/>
+            <Button x:Name="btnAbrirEdat" Content="Abrir" HorizontalAlignment="Left" Margin="439,188,0,0" VerticalAlignment="Top" Width="75" Height="23" Padding="16,2,16,5" IsEnabled="False" Click="btnAbrirEdat_Click"/>
+            <CheckBox x:Name="cbRetail" Content="Modo Retail" HorizontalAlignment="Left" Margin="49,268,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        </Grid>
+    </Grid>
+</UserControl>
